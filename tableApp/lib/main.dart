@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tableApp/table.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -7,29 +8,13 @@ void main() {
   ));
 }
 
-// class TableApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       title: "Table App",
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: const Text('Table App Welcomes You'),
-//           actions: <Widget>[],
-//           ),
-//           body:  Center(
-//             child: Text('Welcome to Table App'),
-//           )
-//       )
-//     );
-//   }
-// }
 
-class TableApp extends StatelessWidget {
+
+class StepOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Row(
+      child: Column(
         children: <Widget>[
           Text("Hello"),
           Text("This is my first App")
