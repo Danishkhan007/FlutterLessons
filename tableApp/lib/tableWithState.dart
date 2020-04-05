@@ -9,7 +9,7 @@ class TableDisplay extends StatefulWidget {
 class _TableDisplayState extends State<TableDisplay> {
 
   int tableValue = 0;
-
+  bool hideShowTable = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,9 +43,12 @@ class _TableDisplayState extends State<TableDisplay> {
                 color: Colors.blue[400],
                 child: Text("SHOW TABLE"),
                 onPressed: () {
+                    setState(() {
+                      hideShowTable = !hideShowTable;
+                    });
                   }
                 ),
-            
+            if (hideShowTable)
               MathTable(table: tableValue)
             ],
            
