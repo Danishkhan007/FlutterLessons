@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:tableApp/table.dart';
+import 'package:tableApp/tableWithState.dart';
 
 void main() {
   runApp(MaterialApp(
     title: "App",
-    home: TableApp()
+    home: TableDisplay()
   ));
 }
-
-
 
 class StepOne extends StatelessWidget {
   @override
