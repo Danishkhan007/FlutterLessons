@@ -9,7 +9,6 @@ class TableApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('MATH APP'),
-          actions: <Widget>[],
           ),
           body:    Container(
             padding: EdgeInsets.all(10),
@@ -17,14 +16,14 @@ class TableApp extends StatelessWidget {
          child: Column(
             children: <Widget>[
               SizedBox(
-                child: Text("Hello")
+                child: Text("Hello rrrr")
               ),
               SizedBox(height: 50),
                   TextField(
                   
                     decoration: InputDecoration(
                       border: OutlineInputBorder(borderRadius: BorderRadius.circular(5)),
-                      labelText: "Table Of"
+                      labelText: "Table Of hello"
                     ),
                     
                   ),
@@ -57,7 +56,7 @@ class MathTable extends StatelessWidget {
     return Container(
       child: Column(children: <Widget>[
            for(var i = 1; i <= 10; i++)
-           Text(table.toString() + "*" + i.toString() + "=" + (table * i).toString())
+           Text(table.toString() + "*" + i.toString() + "=" + (table * i).toString(), style: TextStyle(color: Colors.black))
 
       ],)
     );

@@ -19,7 +19,7 @@ class _TableDisplayState extends State<TableDisplay> {
       ),
       body: Container(
         padding: EdgeInsets.all(10),
-        color: Colors.blueGrey[400],
+        color: Colors.blue[100],
        child: Column(
             children: <Widget>[
               SizedBox(
@@ -41,7 +41,7 @@ class _TableDisplayState extends State<TableDisplay> {
               SizedBox(height: 60),
               RaisedButton(
                 color: Colors.blue[400],
-                child: Text("SHOW TABLE"),
+                child: Text(hideShowTable ? "HIDE TABLE" : "SHOW TABLE"),
                 onPressed: () {
                     setState(() {
                       hideShowTable = !hideShowTable;
