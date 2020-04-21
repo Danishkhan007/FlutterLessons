@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tableApp/login.dart';
 import 'package:tableApp/sample.dart';
 import 'package:tableApp/stopWatch.dart';
 import 'package:tableApp/table.dart';
@@ -78,6 +79,24 @@ class ControlScreen extends StatelessWidget {
             },
              color: Colors.red[200],
             child: Text("Stop Watch"), 
+            ),
+            RaisedButton(onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute<void>(builder: (context) => new LoginScreen()),
+              );
+            },
+             color: Colors.red[200],
+            child: Text("Login"), 
+            ),
+            RaisedButton(onPressed: () {
+              Navigator.push(
+                context, 
+                MaterialPageRoute<void>(builder: (context) => new LoginScreen()),
+              );
+            },
+             color: Colors.red[200],
+            child: Text("Login"), 
             )
           ],
         ),
